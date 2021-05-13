@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--使用无参构造方法创建对象-->
+    <bean id="hellospring" class="com.wz.test.HelloWorld"></bean>
+    <!--set方法注入属性-->
+    <bean id="user" class="com.wz.test.User">
+        <property name="name" value="张三"/>
+        <property name="age" value="10"/>
+    </bean>
+    <!--有参构造函数注入属性-->
+    <bean id="book" class="com.wz.test.Book">
+        <constructor-arg name="name" value="婴儿行为"/>
+        <constructor-arg name="author" value="小刘"/>
+    </bean>
+    <!--外部bean注入-->
+    <bean id="emp" class="com.wz.test.bean.Emp">
+        <property name="name" value="李四"/>
+        <property name="gender" value="男"/>
+        <property name="dept" ref="deptImp"/>
+    </bean>
+    <bean id="deptImp" class="com.wz.test.bean.Dept">
+       <property name="name" value="安保部"/>
+    </bean>
+    <!--配置后置处理器-->
+    <bean id="mybeanpost" class="com.wz.bean.MyBeanPost"/>
+</beans>
