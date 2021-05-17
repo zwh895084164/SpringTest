@@ -4,9 +4,14 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JDBCTemplate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myAnnotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reflection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-beanpostprocessor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring5-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring5-aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring5-proxy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring5-proxy2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/transaction" charset="UTF-8" />
   </component>
 </project>

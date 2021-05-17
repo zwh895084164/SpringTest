@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 //代理
-@Aspect
+@Aspect//标识这个类是切面
 public class UserProxy {
     @Pointcut(value = "execution(* com.aop.User.add(..))")
     public void pointDemo() {

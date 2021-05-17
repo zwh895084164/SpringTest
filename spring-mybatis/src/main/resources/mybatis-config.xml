@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 设置为true之后，表对应的bean中属性命名可以遵循驼峰，而不需要和表字段名一样-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+
+    </settings>
+    <typeAliases>
+        <!-- <typeAlias alias="ZwhUser" type="com.wz.pojo.ZwhUser"/>-->
+        <!-- 在没有注解的情况下，会使用 Bean 的首字母小写的非限定类名来作为它的别名-->
+        <package name="com.wz.pojo"/>
+    </typeAliases>
+    <!--这部分由Spring来管理-->
+ <!--   <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                    <property name="url" value="jdbc:mysql://127.0.0.1:3306/ccs?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="07582"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+<!--    <mappers>
+        <mapper resource="com/wz/dao/ZwhUserMapper.xml"/>
+    </mappers>-->
+</configuration>

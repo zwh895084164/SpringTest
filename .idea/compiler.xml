@@ -8,15 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring5proxy" />
+        <module name="spring-mybatis" />
         <module name="myAnnotation" />
+        <module name="spring5-aop" />
         <module name="spring501" />
         <module name="JDBCTemplate" />
         <module name="transaction" />
         <module name="spring5proxy2" />
+        <module name="springbeanpostprocessor" />
+        <module name="reflection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring5-01" target="1.5" />
+      <module name="springmvc" target="1.8" />
+      <module name="springmybatisnoxml" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

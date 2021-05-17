@@ -15,6 +15,12 @@
         <module>spring5-01</module>
         <module>spring5-proxy2</module>
         <module>myAnnotation</module>
+        <module>spring5-aop</module>
+        <module>spring-mybatis</module>
+        <module>reflection</module>
+        <module>spring-mybatis-noxml</module>
+        <module>spring-beanpostprocessor</module>
+        <module>springmvc</module>
     </modules>
 
 

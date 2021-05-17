@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.ZwhUserDao">
+
+    <!-- id是namespace的方法名 -->
+    <select id="getZwhUserList" resultType="com.wz.pojo.ZwhUser">
+      select * from ccs.zwh_user
+    </select>
+ <!--   <select id="getZwhUserById" parameterType="String" resultType="com.wz.pojo.ZwhUser">
+        select * from zwh_user where user_id=#{userId}
+    </select>
+    <insert id="addUser" parameterType="com.wz.pojo.ZwhUser">
+        &lt;!&ndash; values中的变量名需要和dao中的变量名一致 &ndash;&gt;
+        insert into ccs.zwh_user (user_id, name, sex, pass) values (#{userId},#{name},#{sex},#{pass});
+    </insert>
+   <insert id="addUserMap" parameterType="map">
+        &lt;!&ndash; values中的变量名可以任意 &ndash;&gt;
+        insert into ccs.zwh_user (user_id, name, pass,sex) values (#{id},#{n},#{p},#{s});
+    </insert>
+    <update id="updateUser" parameterType="com.wz.pojo.ZwhUser">
+        update ccs.zwh_user set name=#{name} where user_id=#{userId}
+    </update>-->
+</mapper>
